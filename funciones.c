@@ -6,7 +6,7 @@
 int eDato_get_a(eDato* dato)
 {
 
-    char* valor=NULL;
+    int valor= -1;
 
     if (dato!=NULL)
     {
@@ -27,55 +27,27 @@ int eDato_get_b(eDato* dato)
     return valor;
 }
 
-
-
-
-int eDato_get_a(eDato* dato)
+int eDato_set_a (eDato* dato, int valor)
 {
-
-    char* valor=NULL;
-
-    if (dato!=NULL)
+    int ret = 0;
+    if(dato!=NULL && valor>1500)
     {
-        valor=dato->a;
-    }
-    return valor;
-}
-
-int eDato_get_b(eDato* dato)
-{
-    char* valor=NULL;
-
-    if(dato!=NULL)
-    {
-        valor=dato->b
+        dato->a = valor;
+        ret = 1;
     }
 
-    return valor;
+    return ret;
 }
 
 
-
-int eDato_get_a(eDato* dato)
+int eDato_set_b(eDato* dato, char* valor)
 {
-
-    char* valor=NULL;
-
-    if (dato!=NULL)
+    int ret = 0;
+    if(dato!=NULL && valor!=NULL)
     {
-        valor=dato->a;
-    }
-    return valor;
-}
-
-int eDato_get_b(eDato* dato)
-{
-    char* valor=NULL;
-
-    if(dato!=NULL)
-    {
-        valor=dato->b
+        strcpy(dato->b , valor);
+        ret = 1;
     }
 
-    return valor;
+    return ret;
 }

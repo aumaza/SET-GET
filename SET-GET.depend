@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1527517811 source:c:\test\test1\augusto_maza\set-get\main.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+
+1527518960 c:\test\test1\augusto_maza\set-get\funciones.h
+
+1527518917 source:c:\test\test1\augusto_maza\set-get\funciones.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+
